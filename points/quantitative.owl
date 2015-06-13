@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#"
+     xml:base="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+        <time rdf:datatype="&xsd;dateTime">2014-01-01T04:00:00-05:00</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+        <time rdf:datatype="&xsd;dateTime">2014-01-01T05:00:00-05:00</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+        <time rdf:datatype="&xsd;dateTime">2014-01-01T06:00:00-05:00</time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#t1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#y">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#t2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#time"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#t1"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#time"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#t2"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="&swrlb;lessThanOrEqual"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="urn:swrl#t2"/>
+                                                    <rdf:Description rdf:about="urn:swrl#t1"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="&swrlb;lessThanOrEqual"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="urn:swrl#t1"/>
+                                            <rdf:Description rdf:about="urn:swrl#t2"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#time"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#t1"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#time"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#t2"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="&swrlb;greaterThan"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="urn:swrl#t1"/>
+                                            <rdf:Description rdf:about="urn:swrl#t2"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#y"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

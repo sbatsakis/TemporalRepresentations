@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#"
+     xml:base="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#after"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#before"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#equal">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+        <before rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+        <before rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#p3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2014/4/untitled-ontology-30#Point"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
