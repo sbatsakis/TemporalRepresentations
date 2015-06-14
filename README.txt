@@ -11,7 +11,7 @@ Then you must be able to see SWRL rules into ontologies so at Protege
 menu click:
 window->Views->Ontology views-> Rules.
 
-Then you can start checking the files that i send you, in fact they
+Then you can start checking the files, in fact they
 are not ontologies, they contain just the class Points (time points),
 object properties between points (before,after,equals defining the
 ordering of points)  and in some of these files there is the datatype
