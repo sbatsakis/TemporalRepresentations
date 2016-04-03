@@ -95,3 +95,4 @@ interval is associated directly with two dates (startValue and
 endValue-check example individuals) ,that may make reasoning faster.
 Reasoning only with Pellet.
 So in total 5 alternative representations for points and 5 for intervals.
+
