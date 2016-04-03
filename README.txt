@@ -98,5 +98,8 @@ So in total 5 alternative representations for points and 5 for intervals.
 
 Spatial Representations:
 a) RCC5-Qualitative and RCC8-qualitative: RCC topological relations using qualitative representation.
-b) RCC5-coordinates and RCC8-coordinates: Quantitative RCC relatiosn using coordinates of MBRs.
+   Reasoning using HermiT and Pellet.
+b) RCC5-coordinates and RCC8-coordinates: Quantitative RCC relations using coordinates of MBRs.
+   Reasoning using Pellet.
 c) RCC5 and RCC8: Combined qualitative and quantitative representation.
+   Reasoning using Pellet
